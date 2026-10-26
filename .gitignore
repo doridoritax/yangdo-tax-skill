@@ -1,0 +1,13 @@
+# 인적사항이 들어가는 파일은 올리지 않는다
+skills/양도소득세/efile/세무대리인.json
+skills/양도소득세/efile/사무소설정.json
+**/양도세_고객DB/
+*C116300.0[0-9]
+**/신고인.json
+**/사실관계.json
+*.pdf
+!skills/양도소득세/forms/원본/*.pdf
+*.xlsx
+__pycache__/
+*.pyc
+.pytest_cache/

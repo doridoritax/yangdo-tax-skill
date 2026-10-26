@@ -1,0 +1,1695 @@
+{
+ "규격": {
+  "판": "V5.17",
+  "문서": "양도소득세 전자신고 파일설명서_V5.17_(20260428).doc"
+ },
+ "레코드": {
+  "01": {
+   "서식코드": "C116300",
+   "길이": 350,
+   "필드": [
+    {
+     "name": "자료구분",
+     "type": "C",
+     "len": 2,
+     "dec": 0,
+     "class": "FIX",
+     "start": 0,
+     "null": false,
+     "check": "01"
+    },
+    {
+     "name": "서식코드",
+     "type": "C",
+     "len": 7,
+     "dec": 0,
+     "class": "FIX",
+     "start": 2,
+     "null": false,
+     "check": "C116300"
+    },
+    {
+     "name": "납세자ID",
+     "type": "C",
+     "len": 13,
+     "dec": 0,
+     "class": "",
+     "start": 9,
+     "null": false
+    },
+    {
+     "name": "납세자구분",
+     "type": "C",
+     "len": 2,
+     "dec": 0,
+     "class": "LIST",
+     "start": 22,
+     "null": false
+    },
+    {
+     "name": "세목코드",
+     "type": "C",
+     "len": 2,
+     "dec": 0,
+     "class": "FIX",
+     "start": 24,
+     "null": false
+    },
+    {
+     "name": "신고구분코드",
+     "type": "C",
+     "len": 2,
+     "dec": 0,
+     "class": "",
+     "start": 26,
+     "null": false
+    },
+    {
+     "name": "신고유형",
+     "type": "C",
+     "len": 1,
+     "dec": 0,
+     "class": "",
+     "start": 28,
+     "null": false
+    },
+    {
+     "name": "과세기간_년월",
+     "type": "C",
+     "len": 6,
+     "dec": 0,
+     "class": "",
+     "start": 29,
+     "null": false
+    },
+    {
+     "name": "신고구분상세코드",
+     "type": "C",
+     "len": 2,
+     "dec": 0,
+     "class": "",
+     "start": 35,
+     "null": false
+    },
+    {
+     "name": "신고서종류코드",
+     "type": "C",
+     "len": 3,
+     "dec": 0,
+     "class": "",
+     "start": 37,
+     "null": false
+    },
+    {
+     "name": "민원종류코드",
+     "type": "C",
+     "len": 5,
+     "dec": 0,
+     "class": "",
+     "start": 40,
+     "null": false
+    },
+    {
+     "name": "사용자ID",
+     "type": "C",
+     "len": 20,
+     "dec": 0,
+     "class": "USERID",
+     "start": 45,
+     "null": false
+    },
+    {
+     "name": "제출년월",
+     "type": "C",
+     "len": 6,
+     "dec": 0,
+     "class": "",
+     "start": 65,
+     "null": false
+    },
+    {
+     "name": "성명",
+     "type": "C",
+     "len": 30,
+     "dec": 0,
+     "class": "",
+     "start": 71,
+     "null": false
+    },
+    {
+     "name": "은행코드(국세환급금)",
+     "type": "C",
+     "len": 3,
+     "dec": 0,
+     "class": "CODE",
+     "start": 101,
+     "null": true
+    },
+    {
+     "name": "계좌번호(국세환급금)",
+     "type": "C",
+     "len": 20,
+     "dec": 0,
+     "class": "",
+     "start": 104,
+     "null": true
+    },
+    {
+     "name": "예금종류",
+     "type": "C",
+     "len": 20,
+     "dec": 0,
+     "class": "",
+     "start": 124,
+     "null": true
+    },
+    {
+     "name": "세무대리대표자주민등록번호",
+     "type": "C",
+     "len": 13,
+     "dec": 0,
+     "class": "",
+     "start": 144,
+     "null": true
+    },
+    {
+     "name": "세무대리대표자성명",
+     "type": "C",
+     "len": 30,
+     "dec": 0,
+     "class": "",
+     "start": 157,
+     "null": true
+    },
+    {
+     "name": "세무대리인전화번호",
+     "type": "C",
+     "len": 12,
+     "dec": 0,
+     "class": "",
+     "start": 187,
+     "null": true
+    },
+    {
+     "name": "세무대리사업자등록번호",
+     "type": "C",
+     "len": 10,
+     "dec": 0,
+     "class": "ID",
+     "start": 199,
+     "null": true
+    },
+    {
+     "name": "세무대리인관리번호",
+     "type": "C",
+     "len": 6,
+     "dec": 0,
+     "class": "",
+     "start": 209,
+     "null": true
+    },
+    {
+     "name": "세무프로그램코드",
+     "type": "C",
+     "len": 4,
+     "dec": 0,
+     "class": "LIST",
+     "start": 215,
+     "null": false
+    },
+    {
+     "name": "작성일자",
+     "type": "C",
+     "len": 8,
+     "dec": 0,
+     "class": "",
+     "start": 219,
+     "null": false
+    },
+    {
+     "name": "양도일자",
+     "type": "C",
+     "len": 8,
+     "dec": 0,
+     "class": "",
+     "start": 227,
+     "null": false
+    },
+    {
+     "name": "세무대리인성명",
+     "type": "C",
+     "len": 60,
+     "dec": 0,
+     "class": "",
+     "start": 235,
+     "null": true
+    },
+    {
+     "name": "세무대리인생년월일",
+     "type": "C",
+     "len": 8,
+     "dec": 0,
+     "class": "DATE",
+     "start": 295,
+     "null": true
+    },
+    {
+     "name": "공란",
+     "type": "C",
+     "len": 47,
+     "dec": 0,
+     "class": "SPACE",
+     "start": 303,
+     "null": false
+    }
+   ]
+  },
+  "02": {
+   "서식코드": "C116300",
+   "길이": 400,
+   "필드": [
+    {
+     "name": "자료구분",
+     "type": "C",
+     "len": 2,
+     "dec": 0,
+     "class": "FIX",
+     "start": 0,
+     "null": false,
+     "check": "02"
+    },
+    {
+     "name": "서식코드",
+     "type": "C",
+     "len": 7,
+     "dec": 0,
+     "class": "FIX",
+     "start": 2,
+     "null": false,
+     "check": "C116300"
+    },
+    {
+     "name": "주소_법정동코드",
+     "type": "C",
+     "len": 10,
+     "dec": 0,
+     "class": "",
+     "start": 9,
+     "null": false
+    },
+    {
+     "name": "주소_특수지코드",
+     "type": "C",
+     "len": 1,
+     "dec": 0,
+     "class": "",
+     "start": 19,
+     "null": true
+    },
+    {
+     "name": "주소_번지",
+     "type": "C",
+     "len": 4,
+     "dec": 0,
+     "class": "",
+     "start": 20,
+     "null": true
+    },
+    {
+     "name": "주소_호",
+     "type": "C",
+     "len": 4,
+     "dec": 0,
+     "class": "",
+     "start": 24,
+     "null": true
+    },
+    {
+     "name": "주소_아파트명",
+     "type": "C",
+     "len": 40,
+     "dec": 0,
+     "class": "",
+     "start": 28,
+     "null": true
+    },
+    {
+     "name": "주소_아파트동",
+     "type": "C",
+     "len": 12,
+     "dec": 0,
+     "class": "",
+     "start": 68,
+     "null": true
+    },
+    {
+     "name": "주소_아파트호",
+     "type": "C",
+     "len": 12,
+     "dec": 0,
+     "class": "",
+     "start": 80,
+     "null": true
+    },
+    {
+     "name": "주소_통",
+     "type": "C",
+     "len": 4,
+     "dec": 0,
+     "class": "",
+     "start": 92,
+     "null": true
+    },
+    {
+     "name": "주소_반",
+     "type": "C",
+     "len": 4,
+     "dec": 0,
+     "class": "",
+     "start": 96,
+     "null": true
+    },
+    {
+     "name": "전화번호",
+     "type": "C",
+     "len": 12,
+     "dec": 0,
+     "class": "",
+     "start": 100,
+     "null": false
+    },
+    {
+     "name": "전자메일주소",
+     "type": "C",
+     "len": 50,
+     "dec": 0,
+     "class": "",
+     "start": 112,
+     "null": true
+    },
+    {
+     "name": "내외국인여부",
+     "type": "C",
+     "len": 1,
+     "dec": 0,
+     "class": "",
+     "start": 162,
+     "null": false
+    },
+    {
+     "name": "거주구분",
+     "type": "C",
+     "len": 1,
+     "dec": 0,
+     "class": "",
+     "start": 163,
+     "null": false
+    },
+    {
+     "name": "거주지국코드",
+     "type": "C",
+     "len": 3,
+     "dec": 0,
+     "class": "",
+     "start": 164,
+     "null": false
+    },
+    {
+     "name": "거주지국명",
+     "type": "C",
+     "len": 40,
+     "dec": 0,
+     "class": "",
+     "start": 167,
+     "null": false
+    },
+    {
+     "name": "도로명_도로명코드",
+     "type": "C",
+     "len": 12,
+     "dec": 0,
+     "class": "",
+     "start": 207,
+     "null": true
+    },
+    {
+     "name": "도로명_도로명",
+     "type": "C",
+     "len": 80,
+     "dec": 0,
+     "class": "",
+     "start": 219,
+     "null": true
+    },
+    {
+     "name": "도로명_지하만있는건물구분",
+     "type": "C",
+     "len": 1,
+     "dec": 0,
+     "class": "",
+     "start": 299,
+     "null": true
+    },
+    {
+     "name": "도로명_건물번호(본번)",
+     "type": "N",
+     "len": 5,
+     "dec": 0,
+     "class": "",
+     "start": 300,
+     "null": true
+    },
+    {
+     "name": "도로명_건물번호(부번)",
+     "type": "N",
+     "len": 5,
+     "dec": 0,
+     "class": "",
+     "start": 305,
+     "null": true
+    },
+    {
+     "name": "도로명_아파트동(도로명)",
+     "type": "C",
+     "len": 22,
+     "dec": 0,
+     "class": "",
+     "start": 310,
+     "null": true
+    },
+    {
+     "name": "도로명_아파트호(도로명)",
+     "type": "C",
+     "len": 12,
+     "dec": 0,
+     "class": "",
+     "start": 332,
+     "null": true
+    },
+    {
+     "name": "도로명_읍면동일련번호",
+     "type": "C",
+     "len": 2,
+     "dec": 0,
+     "class": "",
+     "start": 344,
+     "null": true
+    },
+    {
+     "name": "국적코드",
+     "type": "C",
+     "len": 3,
+     "dec": 0,
+     "class": "",
+     "start": 346,
+     "null": false
+    },
+    {
+     "name": "공란",
+     "type": "C",
+     "len": 51,
+     "dec": 0,
+     "class": "SPACE",
+     "start": 349,
+     "null": false
+    }
+   ]
+  },
+  "03": {
+   "서식코드": "C116300",
+   "길이": 450,
+   "필드": [
+    {
+     "name": "자료구분",
+     "type": "C",
+     "len": 2,
+     "dec": 0,
+     "class": "FIX",
+     "start": 0,
+     "null": false,
+     "check": "03"
+    },
+    {
+     "name": "서식코드",
+     "type": "C",
+     "len": 7,
+     "dec": 0,
+     "class": "FIX",
+     "start": 2,
+     "null": false,
+     "check": "C116300"
+    },
+    {
+     "name": "국내외분",
+     "type": "C",
+     "len": 1,
+     "dec": 0,
+     "class": "FIX",
+     "start": 9,
+     "null": false
+    },
+    {
+     "name": "세율구분",
+     "type": "C",
+     "len": 2,
+     "dec": 0,
+     "class": "",
+     "start": 10,
+     "null": false
+    },
+    {
+     "name": "양도소득금액",
+     "type": "N",
+     "len": 13,
+     "dec": 0,
+     "class": "AMT",
+     "start": 12,
+     "null": false
+    },
+    {
+     "name": "기신고,결정,경정된양도소득금액합계",
+     "type": "N",
+     "len": 13,
+     "dec": 0,
+     "class": "AMT+",
+     "start": 25,
+     "null": false
+    },
+    {
+     "name": "양도소득기본공제",
+     "type": "N",
+     "len": 13,
+     "dec": 0,
+     "class": "AMT+",
+     "start": 38,
+     "null": false
+    },
+    {
+     "name": "과세표준",
+     "type": "N",
+     "len": 13,
+     "dec": 0,
+     "class": "AMT",
+     "start": 51,
+     "null": false
+    },
+    {
+     "name": "세율",
+     "type": "N",
+     "len": 5,
+     "dec": 2,
+     "class": "RATE",
+     "start": 64,
+     "null": false
+    },
+    {
+     "name": "산출세액",
+     "type": "N",
+     "len": 13,
+     "dec": 0,
+     "class": "AMT+",
+     "start": 69,
+     "null": false
+    },
+    {
+     "name": "감면세액",
+     "type": "N",
+     "len": 13,
+     "dec": 0,
+     "class": "AMT+",
+     "start": 82,
+     "null": false
+    },
+    {
+     "name": "외국납부세액공제",
+     "type": "N",
+     "len": 13,
+     "dec": 0,
+     "class": "AMT+",
+     "start": 95,
+     "null": false
+    },
+    {
+     "name": "예정신고납부세액공제",
+     "type": "N",
+     "len": 13,
+     "dec": 0,
+     "class": "AMT+",
+     "start": 108,
+     "null": false
+    },
+    {
+     "name": "원천징수세액공제",
+     "type": "N",
+     "len": 13,
+     "dec": 0,
+     "class": "AMT+",
+     "start": 121,
+     "null": false
+    },
+    {
+     "name": "가산세-신고불성실",
+     "type": "N",
+     "len": 13,
+     "dec": 0,
+     "class": "AMT+",
+     "start": 134,
+     "null": false
+    },
+    {
+     "name": "가산세-납부불성실",
+     "type": "N",
+     "len": 13,
+     "dec": 0,
+     "class": "AMT+",
+     "start": 147,
+     "null": false
+    },
+    {
+     "name": "가산세-계",
+     "type": "N",
+     "len": 13,
+     "dec": 0,
+     "class": "AMT+",
+     "start": 160,
+     "null": false
+    },
+    {
+     "name": "기신고,결정,경정세액",
+     "type": "N",
+     "len": 13,
+     "dec": 0,
+     "class": "AMT+",
+     "start": 173,
+     "null": false
+    },
+    {
+     "name": "자진납부할세액",
+     "type": "N",
+     "len": 13,
+     "dec": 0,
+     "class": "AMT",
+     "start": 186,
+     "null": false
+    },
+    {
+     "name": "분납할세액",
+     "type": "N",
+     "len": 13,
+     "dec": 0,
+     "class": "AMT",
+     "start": 199,
+     "null": false
+    },
+    {
+     "name": "자진납부세액",
+     "type": "N",
+     "len": 13,
+     "dec": 0,
+     "class": "AMT",
+     "start": 212,
+     "null": false
+    },
+    {
+     "name": "농어촌특별세_소득세감면세액",
+     "type": "N",
+     "len": 13,
+     "dec": 0,
+     "class": "AMT",
+     "start": 225,
+     "null": false
+    },
+    {
+     "name": "농어촌특별세_세율",
+     "type": "N",
+     "len": 5,
+     "dec": 2,
+     "class": "RATE",
+     "start": 238,
+     "null": false
+    },
+    {
+     "name": "농어촌특별세_산출세액",
+     "type": "N",
+     "len": 13,
+     "dec": 0,
+     "class": "AMT",
+     "start": 243,
+     "null": false
+    },
+    {
+     "name": "농어촌특별세_수정신고가산세등",
+     "type": "N",
+     "len": 13,
+     "dec": 0,
+     "class": "AMT",
+     "start": 256,
+     "null": false
+    },
+    {
+     "name": "농어촌특별세_기신고,결정,경정세액",
+     "type": "N",
+     "len": 13,
+     "dec": 0,
+     "class": "AMT",
+     "start": 269,
+     "null": false
+    },
+    {
+     "name": "농어촌특별세_자진납부할세액",
+     "type": "N",
+     "len": 13,
+     "dec": 0,
+     "class": "AMT",
+     "start": 282,
+     "null": false
+    },
+    {
+     "name": "농어촌특별세_분납할세액",
+     "type": "N",
+     "len": 13,
+     "dec": 0,
+     "class": "AMT",
+     "start": 295,
+     "null": false
+    },
+    {
+     "name": "농어촌특별세_자진납부세액",
+     "type": "N",
+     "len": 13,
+     "dec": 0,
+     "class": "AMT",
+     "start": 308,
+     "null": false
+    },
+    {
+     "name": "주민세_소득세자진납부할세액",
+     "type": "N",
+     "len": 13,
+     "dec": 0,
+     "class": "AMT",
+     "start": 321,
+     "null": false
+    },
+    {
+     "name": "주민세_세율",
+     "type": "N",
+     "len": 5,
+     "dec": 2,
+     "class": "RATE",
+     "start": 334,
+     "null": false,
+     "check": "01000"
+    },
+    {
+     "name": "주민세_산출세액",
+     "type": "N",
+     "len": 13,
+     "dec": 0,
+     "class": "AMT",
+     "start": 339,
+     "null": false
+    },
+    {
+     "name": "주민세_자진납부세액",
+     "type": "N",
+     "len": 13,
+     "dec": 0,
+     "class": "AMT",
+     "start": 352,
+     "null": false
+    },
+    {
+     "name": "소득감면대상소득금액",
+     "type": "N",
+     "len": 13,
+     "dec": 0,
+     "class": "AMT",
+     "start": 365,
+     "null": false
+    },
+    {
+     "name": "가산세-기장불성실등",
+     "type": "N",
+     "len": 13,
+     "dec": 0,
+     "class": "AMT",
+     "start": 378,
+     "null": false
+    },
+    {
+     "name": "전자신고세액공제",
+     "type": "N",
+     "len": 13,
+     "dec": 0,
+     "class": "AMT",
+     "start": 391,
+     "null": false
+    },
+    {
+     "name": "연금계좌세액공제",
+     "type": "N",
+     "len": 13,
+     "dec": 0,
+     "class": "AMT",
+     "start": 404,
+     "null": false
+    },
+    {
+     "name": "공란",
+     "type": "C",
+     "len": 33,
+     "dec": 0,
+     "class": "SPACE",
+     "start": 417,
+     "null": false
+    }
+   ]
+  },
+  "04": {
+   "서식코드": "C116300",
+   "길이": 150,
+   "필드": [
+    {
+     "name": "자료구분",
+     "type": "C",
+     "len": 2,
+     "dec": 0,
+     "class": "FIX",
+     "start": 0,
+     "null": false,
+     "check": "04"
+    },
+    {
+     "name": "서식코드",
+     "type": "C",
+     "len": 7,
+     "dec": 0,
+     "class": "FIX",
+     "start": 2,
+     "null": false,
+     "check": "C116300"
+    },
+    {
+     "name": "일련번호",
+     "type": "C",
+     "len": 6,
+     "dec": 0,
+     "class": "SEQ",
+     "start": 9,
+     "null": false
+    },
+    {
+     "name": "양수인_주민사업자구분",
+     "type": "C",
+     "len": 1,
+     "dec": 0,
+     "class": "",
+     "start": 15,
+     "null": false
+    },
+    {
+     "name": "양수인_내외국인_구분코드",
+     "type": "C",
+     "len": 1,
+     "dec": 0,
+     "class": "",
+     "start": 16,
+     "null": false
+    },
+    {
+     "name": "양수인_주민등록번호",
+     "type": "C",
+     "len": 13,
+     "dec": 0,
+     "class": "",
+     "start": 17,
+     "null": false
+    },
+    {
+     "name": "양수인_성명",
+     "type": "C",
+     "len": 60,
+     "dec": 0,
+     "class": "",
+     "start": 30,
+     "null": false
+    },
+    {
+     "name": "양수인_전화번호",
+     "type": "C",
+     "len": 12,
+     "dec": 0,
+     "class": "",
+     "start": 90,
+     "null": false
+    },
+    {
+     "name": "양수인_지분(분자)",
+     "type": "N",
+     "len": 11,
+     "dec": 3,
+     "class": "AMT+",
+     "start": 102,
+     "null": false
+    },
+    {
+     "name": "양수인_지분(분모)",
+     "type": "N",
+     "len": 11,
+     "dec": 3,
+     "class": "AMT+",
+     "start": 113,
+     "null": false
+    },
+    {
+     "name": "양수인_양도자와의관계",
+     "type": "C",
+     "len": 2,
+     "dec": 0,
+     "class": "",
+     "start": 124,
+     "null": false
+    },
+    {
+     "name": "공란",
+     "type": "C",
+     "len": 24,
+     "dec": 0,
+     "class": "SPACE",
+     "start": 126,
+     "null": false
+    }
+   ]
+  },
+  "05": {
+   "서식코드": "C116400",
+   "길이": 700,
+   "필드": [
+    {
+     "name": "자료구분",
+     "type": "C",
+     "len": 2,
+     "dec": 0,
+     "class": "FIX",
+     "start": 0,
+     "null": false,
+     "check": "05"
+    },
+    {
+     "name": "서식코드",
+     "type": "C",
+     "len": 7,
+     "dec": 0,
+     "class": "FIX",
+     "start": 2,
+     "null": false,
+     "check": "C116400"
+    },
+    {
+     "name": "일련번호",
+     "type": "C",
+     "len": 6,
+     "dec": 0,
+     "class": "SEQ",
+     "start": 9,
+     "null": false
+    },
+    {
+     "name": "과세구분",
+     "type": "C",
+     "len": 2,
+     "dec": 0,
+     "class": "",
+     "start": 15,
+     "null": false
+    },
+    {
+     "name": "국내외분(소재지)",
+     "type": "C",
+     "len": 1,
+     "dec": 0,
+     "class": "",
+     "start": 17,
+     "null": false
+    },
+    {
+     "name": "세율구분",
+     "type": "C",
+     "len": 2,
+     "dec": 0,
+     "class": "CODE",
+     "start": 18,
+     "null": false
+    },
+    {
+     "name": "자산의종류",
+     "type": "C",
+     "len": 2,
+     "dec": 0,
+     "class": "CODE",
+     "start": 20,
+     "null": false
+    },
+    {
+     "name": "소재지_법정동코드",
+     "type": "C",
+     "len": 10,
+     "dec": 0,
+     "class": "CODE",
+     "start": 22,
+     "null": false
+    },
+    {
+     "name": "소재지_특수지코드",
+     "type": "C",
+     "len": 1,
+     "dec": 0,
+     "class": "CODE",
+     "start": 32,
+     "null": false
+    },
+    {
+     "name": "소재지_번지",
+     "type": "C",
+     "len": 4,
+     "dec": 0,
+     "class": "SEQ",
+     "start": 33,
+     "null": false
+    },
+    {
+     "name": "소재지_호",
+     "type": "C",
+     "len": 4,
+     "dec": 0,
+     "class": "SEQ",
+     "start": 37,
+     "null": false
+    },
+    {
+     "name": "소재지_아파트명",
+     "type": "C",
+     "len": 40,
+     "dec": 0,
+     "class": "",
+     "start": 41,
+     "null": true
+    },
+    {
+     "name": "소재지_아파트동",
+     "type": "C",
+     "len": 12,
+     "dec": 0,
+     "class": "",
+     "start": 81,
+     "null": true
+    },
+    {
+     "name": "소재지_아파트호",
+     "type": "C",
+     "len": 12,
+     "dec": 0,
+     "class": "",
+     "start": 93,
+     "null": true
+    },
+    {
+     "name": "소재지_통",
+     "type": "C",
+     "len": 4,
+     "dec": 0,
+     "class": "",
+     "start": 105,
+     "null": true
+    },
+    {
+     "name": "소재지_반",
+     "type": "C",
+     "len": 4,
+     "dec": 0,
+     "class": "",
+     "start": 109,
+     "null": true
+    },
+    {
+     "name": "거래일자_양도일자",
+     "type": "C",
+     "len": 8,
+     "dec": 0,
+     "class": "",
+     "start": 113,
+     "null": false
+    },
+    {
+     "name": "거래일자_양도등기목적",
+     "type": "C",
+     "len": 6,
+     "dec": 0,
+     "class": "CODE",
+     "start": 121,
+     "null": false
+    },
+    {
+     "name": "거래일자_양도등기원인",
+     "type": "C",
+     "len": 4,
+     "dec": 0,
+     "class": "CODE",
+     "start": 127,
+     "null": true
+    },
+    {
+     "name": "거래일자_취득일자",
+     "type": "C",
+     "len": 8,
+     "dec": 0,
+     "class": "",
+     "start": 131,
+     "null": false
+    },
+    {
+     "name": "거래일자_취득등기목적",
+     "type": "C",
+     "len": 6,
+     "dec": 0,
+     "class": "CODE",
+     "start": 139,
+     "null": false
+    },
+    {
+     "name": "거래일자_취득등기원인",
+     "type": "C",
+     "len": 4,
+     "dec": 0,
+     "class": "CODE",
+     "start": 145,
+     "null": true
+    },
+    {
+     "name": "거래자산면적_총면적_토지_면적",
+     "type": "N",
+     "len": 11,
+     "dec": 3,
+     "class": "AMT+",
+     "start": 149,
+     "null": false
+    },
+    {
+     "name": "거래자산면적_총면적_토지_지분(분자)",
+     "type": "N",
+     "len": 11,
+     "dec": 3,
+     "class": "AMT+",
+     "start": 160,
+     "null": false
+    },
+    {
+     "name": "거래자산면적_총면적_토지_지분(분모)",
+     "type": "N",
+     "len": 11,
+     "dec": 3,
+     "class": "AMT+",
+     "start": 171,
+     "null": false
+    },
+    {
+     "name": "거래자산면적_총면적_건물_면적",
+     "type": "N",
+     "len": 11,
+     "dec": 3,
+     "class": "AMT+",
+     "start": 182,
+     "null": false
+    },
+    {
+     "name": "거래자산면적_총면적_건물_지분(분자)",
+     "type": "N",
+     "len": 11,
+     "dec": 3,
+     "class": "AMT+",
+     "start": 193,
+     "null": false
+    },
+    {
+     "name": "거래자산면적_총면적_건물_지분(분모)",
+     "type": "N",
+     "len": 11,
+     "dec": 3,
+     "class": "AMT+",
+     "start": 204,
+     "null": false
+    },
+    {
+     "name": "거래자산면적_양도면적_토지_면적",
+     "type": "N",
+     "len": 11,
+     "dec": 3,
+     "class": "AMT+",
+     "start": 215,
+     "null": false
+    },
+    {
+     "name": "거래자산면적_양도면적_건물_면적",
+     "type": "N",
+     "len": 11,
+     "dec": 3,
+     "class": "AMT+",
+     "start": 226,
+     "null": false
+    },
+    {
+     "name": "거래자산면적_취득면적_토지_면적",
+     "type": "N",
+     "len": 11,
+     "dec": 3,
+     "class": "AMT+",
+     "start": 237,
+     "null": false
+    },
+    {
+     "name": "거래자산면적_취득면적_건물_면적",
+     "type": "N",
+     "len": 11,
+     "dec": 3,
+     "class": "AMT+",
+     "start": 248,
+     "null": false
+    },
+    {
+     "name": "거래금액_양도가액",
+     "type": "N",
+     "len": 13,
+     "dec": 0,
+     "class": "AMT+",
+     "start": 259,
+     "null": false
+    },
+    {
+     "name": "거래금액_취득가액",
+     "type": "N",
+     "len": 13,
+     "dec": 0,
+     "class": "AMT+",
+     "start": 272,
+     "null": false
+    },
+    {
+     "name": "취득가액종류",
+     "type": "C",
+     "len": 2,
+     "dec": 0,
+     "class": "CODE",
+     "start": 285,
+     "null": false
+    },
+    {
+     "name": "기납부토지초과이득세",
+     "type": "N",
+     "len": 13,
+     "dec": 0,
+     "class": "",
+     "start": 287,
+     "null": false
+    },
+    {
+     "name": "기타필요경비",
+     "type": "N",
+     "len": 13,
+     "dec": 0,
+     "class": "",
+     "start": 300,
+     "null": false
+    },
+    {
+     "name": "양도차익_전체양도차익",
+     "type": "N",
+     "len": 13,
+     "dec": 0,
+     "class": "",
+     "start": 313,
+     "null": false
+    },
+    {
+     "name": "양도차익_비과세양도차익",
+     "type": "N",
+     "len": 13,
+     "dec": 0,
+     "class": "",
+     "start": 326,
+     "null": false
+    },
+    {
+     "name": "양도차익_과세대상양도차익",
+     "type": "N",
+     "len": 13,
+     "dec": 0,
+     "class": "",
+     "start": 339,
+     "null": false
+    },
+    {
+     "name": "장기보유특별공제",
+     "type": "N",
+     "len": 13,
+     "dec": 0,
+     "class": "",
+     "start": 352,
+     "null": false
+    },
+    {
+     "name": "양도소득금액",
+     "type": "N",
+     "len": 13,
+     "dec": 0,
+     "class": "",
+     "start": 365,
+     "null": false
+    },
+    {
+     "name": "감면소득금액-세액감면대상",
+     "type": "N",
+     "len": 13,
+     "dec": 0,
+     "class": "",
+     "start": 378,
+     "null": false
+    },
+    {
+     "name": "감면종류",
+     "type": "C",
+     "len": 3,
+     "dec": 0,
+     "class": "CODE",
+     "start": 391,
+     "null": true
+    },
+    {
+     "name": "감면율",
+     "type": "N",
+     "len": 5,
+     "dec": 2,
+     "class": "RATE",
+     "start": 394,
+     "null": false
+    },
+    {
+     "name": "양도시기준시가_건물_일반건물",
+     "type": "N",
+     "len": 13,
+     "dec": 0,
+     "class": "",
+     "start": 399,
+     "null": false
+    },
+    {
+     "name": "양도시기준시가_건물_오피스텔,상업용",
+     "type": "N",
+     "len": 13,
+     "dec": 0,
+     "class": "",
+     "start": 412,
+     "null": false
+    },
+    {
+     "name": "양도시기준시가_건물_개별,공동주택",
+     "type": "N",
+     "len": 13,
+     "dec": 0,
+     "class": "",
+     "start": 425,
+     "null": false
+    },
+    {
+     "name": "양도시기준시가_토지",
+     "type": "N",
+     "len": 13,
+     "dec": 0,
+     "class": "",
+     "start": 438,
+     "null": false
+    },
+    {
+     "name": "양도시기준시가_합계",
+     "type": "N",
+     "len": 13,
+     "dec": 0,
+     "class": "",
+     "start": 451,
+     "null": false
+    },
+    {
+     "name": "취득시기준시가_건물_일반건물",
+     "type": "N",
+     "len": 13,
+     "dec": 0,
+     "class": "",
+     "start": 464,
+     "null": false
+    },
+    {
+     "name": "취득시기준시가_건물_오피스텔,상업용",
+     "type": "N",
+     "len": 13,
+     "dec": 0,
+     "class": "",
+     "start": 477,
+     "null": false
+    },
+    {
+     "name": "취득시기준시가_건물_개별,공동주택",
+     "type": "N",
+     "len": 13,
+     "dec": 0,
+     "class": "",
+     "start": 490,
+     "null": false
+    },
+    {
+     "name": "취득시기준시가_토지",
+     "type": "N",
+     "len": 13,
+     "dec": 0,
+     "class": "",
+     "start": 503,
+     "null": false
+    },
+    {
+     "name": "취득시기준시가_합계",
+     "type": "N",
+     "len": 13,
+     "dec": 0,
+     "class": "",
+     "start": 516,
+     "null": false
+    },
+    {
+     "name": "자동계산불러오기구분값",
+     "type": "C",
+     "len": 1,
+     "dec": 0,
+     "class": "",
+     "start": 529,
+     "null": false
+    },
+    {
+     "name": "소재지국",
+     "type": "C",
+     "len": 3,
+     "dec": 0,
+     "class": "",
+     "start": 530,
+     "null": false
+    },
+    {
+     "name": "소재지국명",
+     "type": "C",
+     "len": 40,
+     "dec": 0,
+     "class": "",
+     "start": 533,
+     "null": false
+    },
+    {
+     "name": "소재지",
+     "type": "C",
+     "len": 60,
+     "dec": 0,
+     "class": "",
+     "start": 573,
+     "null": true
+    },
+    {
+     "name": "감면소득금액-소득금액감면대상",
+     "type": "N",
+     "len": 13,
+     "dec": 0,
+     "class": "AMT+",
+     "start": 633,
+     "null": false
+    },
+    {
+     "name": "필요경비신고자료일련번호",
+     "type": "N",
+     "len": 6,
+     "dec": 0,
+     "class": "",
+     "start": 646,
+     "null": false
+    },
+    {
+     "name": "장기보유특별공제적용구분코드",
+     "type": "C",
+     "len": 2,
+     "dec": 0,
+     "class": "CODE",
+     "start": 652,
+     "null": false
+    },
+    {
+     "name": "주택거주기간년수",
+     "type": "N",
+     "len": 4,
+     "dec": 0,
+     "class": "AMT+",
+     "start": 654,
+     "null": false
+    },
+    {
+     "name": "1세대1주택비과세_보유기간",
+     "type": "C",
+     "len": 2,
+     "dec": 0,
+     "class": "CODE",
+     "start": 658,
+     "null": false
+    },
+    {
+     "name": "1세대1주택_비과세_거주기간",
+     "type": "C",
+     "len": 2,
+     "dec": 0,
+     "class": "CODE",
+     "start": 660,
+     "null": false
+    },
+    {
+     "name": "공란",
+     "type": "C",
+     "len": 38,
+     "dec": 0,
+     "class": "SPACE",
+     "start": 662,
+     "null": false
+    }
+   ]
+  },
+  "07": {
+   "서식코드": "C116600",
+   "길이": 200,
+   "필드": [
+    {
+     "name": "자료구분",
+     "type": "C",
+     "len": 2,
+     "dec": 0,
+     "class": "FIX",
+     "start": 0,
+     "null": false,
+     "check": "07"
+    },
+    {
+     "name": "서식코드",
+     "type": "C",
+     "len": 7,
+     "dec": 0,
+     "class": "FIX",
+     "start": 2,
+     "null": false,
+     "check": "C116600"
+    },
+    {
+     "name": "필요경비신고자료일련번호",
+     "type": "C",
+     "len": 6,
+     "dec": 0,
+     "class": "",
+     "start": 9,
+     "null": false
+    },
+    {
+     "name": "구분코드",
+     "type": "C",
+     "len": 5,
+     "dec": 0,
+     "class": "SEQ",
+     "start": 15,
+     "null": false
+    },
+    {
+     "name": "상세일련번호",
+     "type": "C",
+     "len": 6,
+     "dec": 0,
+     "class": "LIST",
+     "start": 20,
+     "null": false
+    },
+    {
+     "name": "상호",
+     "type": "C",
+     "len": 60,
+     "dec": 0,
+     "class": "",
+     "start": 26,
+     "null": false
+    },
+    {
+     "name": "사업자등록번호",
+     "type": "C",
+     "len": 10,
+     "dec": 0,
+     "class": "",
+     "start": 86,
+     "null": false
+    },
+    {
+     "name": "지급일자",
+     "type": "C",
+     "len": 8,
+     "dec": 0,
+     "class": "",
+     "start": 96,
+     "null": false
+    },
+    {
+     "name": "지급금액",
+     "type": "N",
+     "len": 13,
+     "dec": 0,
+     "class": "",
+     "start": 104,
+     "null": false
+    },
+    {
+     "name": "증빙종류코드",
+     "type": "C",
+     "len": 2,
+     "dec": 0,
+     "class": "CODE",
+     "start": 117,
+     "null": false
+    },
+    {
+     "name": "공란",
+     "type": "C",
+     "len": 81,
+     "dec": 0,
+     "class": "SPACE",
+     "start": 119,
+     "null": false
+    }
+   ]
+  }
+ }
+}
